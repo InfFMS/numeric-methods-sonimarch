@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def s(f1, f2, a, b):
     su = 0
-    for i in range(a * 10, b * 10 + 10):
+    for i in range(a * 10, b * 10):
         d = (f1(i * 0.1) - f2(i * 0.1)) * 0.1
         su += d
     return su

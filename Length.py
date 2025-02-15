@@ -4,7 +4,7 @@ import math
 def l(f):
     s = 0
     for i in range(0, 314):
-        d = f(i * 0.01 + 0.01) - f(i * 0.01)
+        d = ((f(i * 0.01 + 0.01) - f(i * 0.01)) ** 2 + 0.00001) ** 0.5
         s += abs(d)
     return s
 
